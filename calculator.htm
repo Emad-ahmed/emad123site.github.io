@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,600;0,700;1,600&family=Lobster&family=Peddana&family=Piazzolla:wght@600&family=Sansita+Swashed:wght@800&family=Teko:wght@600&display=swap" rel="stylesheet"> 
+
+    <title>Calculator</title>
+    <style>
+      .title{
+border-radius: 10px;
+margin-bottom: 10px;
+text-align:center;
+width: 210px;
+color:#ff4456;
+border: solid black 1px;
+}
+
+table
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    
+}
+input[type="button"]
+{
+border-radius: 10px;
+background-color:#111212;
+color: whitesmoke;
+border-color:#538887;
+width: 17rem;
+height: 5rem;
+font-size: 3rem;
+}
+input[type="text"]
+        {
+        border-radius: 10px;
+        text-align: right;
+        color: white;
+        border-color: khaki;
+        width: 100%;
+        font-size: 3rem;
+        color: rgb(245, 240, 239);
+        background-color: #354443;
+        text-align: center;
+        height: 5rem;
+        }
+
+@media (max-width: 980px)
+{
+  input[type="text"]
+        {
+        border-radius: 10px;
+        text-align: right;
+        color: white;
+        border-color: khaki;
+        width: 100%;
+        font-size: 1rem;
+        color: rgb(245, 240, 239);
+        background-color: #354443;
+        text-align: center;
+        height: 3rem;
+        }
+
+  input[type="button"]
+    {
+    border-radius: 4px;
+    background-color:#111212;
+    color: whitesmoke;
+    border-color:#538887;
+    width: 3.4rem;
+    height: 3.4rem;
+    font-size: 1rem;
+    }
+}
+
+@media (max-width: 980px)
+{
+  input[type="text"]
+        {
+        border-radius: 10px;
+        text-align: right;
+        color: white;
+        border-color: khaki;
+        width: 100%;
+        font-size: .8rem;
+        color: rgb(245, 240, 239);
+        background-color: #354443;
+        text-align: center;
+        height: 3.5rem;
+        }
+
+  input[type="button"]
+    {
+    border-radius: 4px;
+    background-color:#111212;
+    color: whitesmoke;
+    border-color:#538887;
+    width: 3.9rem;
+    height: 3.4rem;
+    font-size: 1rem;
+    }
+    .jumbotron
+    {
+      height: 1000px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light jio8">
+      
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto ml-auto">
+            <li class="nav-item active">
+              <a class="link" href="index.htm" class="active" style="color: tomato;">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="link1" href="about.htm">Exprience</a>
+            </li>
+            <div class="dropdown" style="margin-top: 20px;">
+              <a href="#" class="dropbtn dropdown-toggle ">About Me   </a>
+              <div class="dropdown-content mt-2" style="width: 200px;">
+                <a href="emad.htm">Emad Ahmed</a>
+                <hr class="bg-dark">
+                
+              </div>
+            </div>
+            
+            <div class="dropdown" style="margin-top: 20px;">
+              <a href="#" class="dropbtn dropdown-toggle ">My Project  </a>
+              <div class="dropdown-content mt-2">
+                <a href="calculator.htm">Calculator</a>
+                <hr class="bg-dark">
+                <a href="tictoe.htm">Tic Toe</a>
+                <hr class="bg-dark">
+                <a href="dictionary.htm">Dictionary</a>
+                <hr class="bg-dark">
+              <a href="scientific.htm">Scientific Calculator</a>
+              </div>
+            </div>
+            
+            <li class="nav-item">
+              <a class="link3" href="versity.htm" >Versity</a>
+            </li>
+            <li class="nav-item">
+                <a class="link3" href="contact.htm" >Contact Me</a>
+              </li>
+              <div class="dropdown" style="margin-top: 20px;">
+                <a href="#" class="dropbtn dropdown-toggle ">Deliverable</a>
+                <div class="dropdown-content mt-2">
+                  
+                  <a href="https://amadahmed1234678.wixsite.com/mysite-7" onmousedown="bleep.play()">Report</a>
+                  <hr class="bg-dark">
+                  <a href="diagram.htm">Diagram</a>
+    
+                </div>
+              </div>
+          </ul>
+          
+        </div>
+      </nav>
+
+<div class="jumbotron" style="background: blanchedalmond;">
+
+    <h1 class="text-center" style="color: #F44747;">Simple Calculator</h1>
+
+        <table>
+        <tr>
+        <td><input type="button" style="background-color: #1F2424;" value="c" onclick="clr()"/> </td>
+        <td colspan="3"><input type="text" id="edu"/></td>
+        <!-- clr() function will call clr to clear all value -->
+        </tr>
+        <tr>
+        <!-- creating buttons and assigning values-->
+        <td><input type="button" style="background-color: #1F2424;" value="+" onclick="dis('+')"/> </td>
+        <td><input type="button" value="1" onclick="dis('1')"/> </td>
+        <td><input type="button" value="2" onclick="dis('2')"/> </td>
+        <td><input type="button" value="3" onclick="dis('3')"/> </td>
+        </tr>
+        <tr>
+        <td><input type="button" style="background-color: #1F2424;" value="-" onclick="dis('-')"/> </td>
+        <td><input type="button" value="4" onclick="dis('4')"/> </td>
+        <td><input type="button" value="5" onclick="dis('5')"/> </td>
+        <td><input type="button" value="6" onclick="dis('6')"/> </td>
+        </tr>
+        <tr>
+        <td><input type="button" style="background-color: #1F2424;" value="*" onclick="dis('*')"/> </td>
+        <td><input type="button" value="7" onclick="dis('7')"/> </td>
+        <td><input type="button" value="8" onclick="dis('8')"/> </td>
+        <td><input type="button" value="9" onclick="dis('9')"/> </td>
+        </tr>
+        <tr>
+        <td><input type="button" style="background-color: #1F2424;" value="/" onclick="dis('/')"/> </td>
+        <td><input type="button" value="." onclick="dis('.')"/> </td>
+        <td><input type="button" value="0" onclick="dis('0')"/> </td>
+        <!-- Evaluating function call eval()-->
+        <td><input type="button" value="=" onclick="solve()"/> </td>
+    </tr>
+</table>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script>
+        //function for displaying values
+        function dis(val)
+        {
+        document.getElementById("edu").value+=val
+        }
+        //function for evaluation
+        function solve()
+        {
+        let x = document.getElementById("edu").value
+        let y = eval(x)
+        document.getElementById("edu").value = y
+        }
+        //function for clearing the display
+        function clr()
+        {
+        document.getElementById("edu").value = ""
+        }
+        </script>
+    
+    <script type="text/javascript" src="typed.js"></script>
+    <script type="text/javascript">
+          var typed = new Typed('.bestde', {
+        strings: ["THIS IS A SAMPLE OF OUR CALCULATOR PROJECT"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop:true,
+      });
+    </script>
+    <script>
+      var bleep = new Audio()
+     bleep.src = "this is.mp3";
+   </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

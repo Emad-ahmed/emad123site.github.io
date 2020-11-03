@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hello, world!</title>
+
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav
+        {
+            background: url("img/jess-bailey-l3N9Q27zULw-unsplash.jpg");
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+           
+        }
+        .web a 
+        {
+            text-decoration: none;
+            font-size: 1.2rem;
+            background: #050405;
+            padding: 10px;
+            color: white;
+            border-radius: 17px;
+        }
+        .downloadsource a
+        {
+            margin-right: 20px;
+            font-size: 1rem;
+            text-decoration: none;
+        }
+
+        .item1
+        {
+            background-color: #F4597F;
+            padding: 10px;
+            color: #000000;
+            border-radius: 17px;
+
+        }
+
+        .item2{
+            background-color: #120E17;
+            padding: 10px;
+            color: white;
+            border-radius: 17px;
+        }
+        .mid a
+        {
+            position: absolute;
+            font-size: 2.7rem;
+            margin-top: -20px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .container img
+        {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100%;
+            width: 100%;
+        }
+        .dia
+        {
+            border-bottom: 1px solid tomato;
+            padding-bottom: 7px;
+            margin-right: 40%;
+            margin-left: 40%;
+        }
+        .dia1
+        {
+            border-bottom: 1px solid tomato;
+            padding-bottom: 7px;
+            margin-right: 30%;
+            margin-left: 30%;
+        }
+        
+
+        .row img
+        {
+
+            position: relative;
+            left: 20%;
+            height: 100%;
+            width: 50%;
+        }
+        .row h3
+        {
+            color: tomato;
+        }
+        .jiobai
+        {
+            margin-top: 10%;
+        }
+
+        @media (max-width:900px) {
+               nav
+               {
+                   display: flex;
+                   flex-direction: column;
+                   padding: 20%;
+               } 
+               .mid a
+                {
+                    display: flex;
+                }
+                .web a 
+                {
+                    font-size: 1rem;
+                    margin-bottom: 20%;
+                }
+
+                .downloadsource
+                {
+                    margin-top: 40%;
+                }
+                .dia
+                {
+                    font-size: 1.2rem;
+                    border-bottom: 1px solid turquoise;
+                    margin-right: 20%;
+                    margin-left: 20%;
+                }
+                .container img
+                {
+                    width: 75%;
+                    height: 75%;
+                }
+                .dia1
+                {
+                    font-size: 1.2rem;
+                    margin-top: 0;
+                }
+                .row p
+                {
+                    margin-right: 70px;
+                    text-align: justify;
+                }
+                .row h3
+                {
+                    font-size: 1.1rem;
+                }
+                .downloadsource a
+                {
+                    margin-bottom: 10%;
+                }
+
+            }
+    </style>
+  </head>
+  <body>
+      <div class="container-fluid1">
+    <nav>
+        <div class="web">
+            <a href="https://amadahmed1234678.wixsite.com/mysite-7" class="btn btn-dark btn-lg">Back To The Report</a>
+        </div>
+
+        <div class="mid">
+            <a href="#">Calculator</a>
+        </div>
+       
+        <div class="downloadsource">
+            <a href="Calculator.java.txt" class="btn btn-primary btn-lg" download>Download Source Code <i class="fa fa-download"></i></a>
+            <a href="diagram/Group 2216.png" class="btn btn-danger btn-lg" download>Download Diagram <i class="fa fa-download"></i></a>
+        </div>
+    </nav>
+</div>
+
+
+
+<h1 class="dia text-center mt-5 mb-5">Diagram</h1>
+
+<div class="container mb-5">
+    <img src="diagram/Group 2216.png" alt="">
+</div>
+
+<hr>
+
+<h1 class="dia1 text-center mt-5">Class Description</h1>
+
+<div class="container-fluid mt-5">
+    <div class="row mb-5">
+        <div class="col-lg-6 mt-3">
+            <h3 class="text-center mb-3">Main</h3>
+            <p class="ml-5">Our Main Class is named Main.In this class, first of all ,we show which
+                features we have.User can choice any feature he want by clicking related number
+                for this feature.Then by calling related method this job will be done.our Main
+                class have 5 method,these are arithmeticCalculation() , others(),
+                numberTransformation() , bitwiseOperation() , trigonometricFuntion().</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="diagram/main.png" alt="" class="ml-5">
+        </div>
+        
+    </div>
+    <hr>
+    <div class="row mb-5">
+        <div class="col-lg-6 mt-5">
+            <h3 class="text-center mb-3">ArithmeticCalculation</h3>
+            <p class="ml-5">This class is contain 5 method
+                summation(),substration(),
+                multiplication(),division() and mod().summation()
+                method can contain a series of numbers and displays their summtion.
+                substraction() method also can contain a series of numbers and displays their
+                substraction.Multiplication method also can contain a series of numbers and
+                displays their multiplication.Division() and mod() Method can display division and
+                modulas of two numbers if possible.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="diagram/arithmatic.png" alt="" class="ml-5  mt-4">
+        </div>
+        
+    </div>
+    <hr>
+    <div class="row mb-5">
+        <div class="col-lg-6 mt-5">
+            <h3 class="text-center mb-3">Others</h3>
+            <p>This Class  factorial(),square(),cube(),xToThePower(),
+                squareRoot(),logarithm(),percentage()
+                methods and displays their related result respectively.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="diagram/others.png" alt="" class="ml-5  mt-4">
+        </div>
+        
+    </div>
+    <hr>
+    <div class="row mb-5">
+        <div class="col-lg-6 mt-5">
+            <h3 class="text-center jiobai mb-3">NumberTransformation</h3>
+            <p>This Class contains DecToBin(), DecToOct(),
+                DecToHexa(), BinToDec(), BinToOct(), BinToHexa(), OctToDec(), OctToBin(),
+                OctToHexa(), HexaToDec(), HexaToBin(), HexaToOct(). These Methods Transfer a
+                number from one number system to another.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="diagram/number trans.png" alt="" class="ml-5  mt-4">
+        </div>
+        
+    </div>
+    <hr>
+
+    <div class="row mb-5">
+        <div class="col-lg-6 mt-5">
+            <h3 class="text-center mb-3">BitwiseOperation</h3>
+            <p>  This Class Contains 3 mathods such as OR(),AND() and X_OR()
+                methods. These methods can compute bitwise OR,AND,X-OR operation of two
+                number of Decimal,Binary,Octal and Hexadecimal Number System.Then displays
+                this answer.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="diagram/bitwise.png" alt="" class="ml-5  mt-4">
+        </div>
+        
+    </div>
+    <hr>
+
+    <div class="row mb-5">
+        <div class="col-lg-6 mt-5">
+            <h3 class="text-center mb-3">TrigonometricOperation</h3>
+            <p>This Class Contains 3 methods such as Sin(),Cos(),Tan()
+                methods and displays their related result.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="diagram/trigonim.png" alt="" class="ml-5  mt-4">
+        </div>
+        
+    </div>
+</div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

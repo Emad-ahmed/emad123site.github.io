@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,600;0,700;1,600&family=Lobster&family=Peddana&family=Piazzolla:wght@600&family=Sansita+Swashed:wght@800&family=Teko:wght@600&display=swap" rel="stylesheet">  </head>
+    <title>DICTIONARY</title>
+
+    <style>
+       
+
+.container-fluid
+{
+    text-align: center;
+    
+}
+
+.container-fluid h1 
+{
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    color: violet;
+}
+
+.container-fluid label
+{
+    font-size: 2rem;
+   
+}
+
+.container-fluid input
+{
+    width: 40%;
+    text-align: center;
+    padding: 1%;
+    font-size: 2rem;
+}
+
+#mean
+{
+    font-size: 2rem;
+    text-align: center;
+    
+
+}
+
+@media (max-width: 800px)
+{
+  .nice
+  {
+    font-size: 2rem;
+  }
+  input[type='text']{
+    font-size: 1rem;
+  }
+  .btn
+  {
+    width: 50%;
+    
+  }
+  .btn:hover
+  {
+    width: 50%;
+    
+  }
+
+}
+
+
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light jio8">
+      
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto ml-auto">
+            <li class="nav-item active">
+              <a class="link" href="index.htm" class="active" style="color: tomato;">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="link1" href="about.htm">Exprience</a>
+            </li>
+            <div class="dropdown" style="margin-top: 20px;">
+              <a href="#" class="dropbtn dropdown-toggle ">About Me   </a>
+              <div class="dropdown-content mt-2" style="width: 200px;">
+                <a href="emad.htm">Emad Ahmed</a>
+                <hr class="bg-dark">
+                
+              </div>
+            </div>
+            
+            <div class="dropdown" style="margin-top: 20px;">
+              <a href="#" class="dropbtn dropdown-toggle ">My Project  </a>
+              <div class="dropdown-content mt-2">
+                <a href="calculator.htm">Calculator</a>
+                <hr class="bg-dark">
+                <a href="tictoe.htm">Tic Toe</a>
+                <hr class="bg-dark">
+                <a href="dictionary.htm">Dictionary</a>
+                <hr class="bg-dark">
+                <a href="scientific.htm">Scientific Calculator</a>
+              </div>
+            </div>
+            
+            <li class="nav-item">
+              <a class="link3" href="versity.htm" >Versity</a>
+            </li>
+            <li class="nav-item">
+                <a class="link3" href="contact.htm" >Contact Me</a>
+              </li>
+              <div class="dropdown" style="margin-top: 20px;">
+                <a href="#" class="dropbtn dropdown-toggle ">Deliverable</a>
+                <div class="dropdown-content mt-2">
+                  
+                  <a href="https://amadahmed1234678.wixsite.com/mysite-7" onmousedown="bleep.play()">Report</a>
+                  <hr class="bg-dark">
+                  <a href="diagram.htm">Diagram</a>
+    
+                </div>
+              </div>
+          </ul>
+          
+        </div>
+      </nav>
+
+    <div class="container-fluid">
+        <div class="jumbotron" style="background-color: #273B3A;">
+        <h1><span class="nice"></span></h1>
+
+        <label for="word">Enter Word: </label> <br> <br>
+        <input type="text" id="myText" placeholder="Enter Word"> <br> <br> 
+
+        <button type="button" class="btn btn-outline-warning text-white" onclick="myFunction()">Menaing</button>  <br> <br>
+
+
+        <label for="mean">Meaning: </label> <br> <br>
+        <textarea name="mean" id="mean" cols="50" rows="70" style="margin: 0px; width: 60%; height: 200px;"></textarea>
+    </div>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+        let array1 = 
+{
+    come : "আসা , হওয়া , ঘটা , পাওয়া , প্রতিভাত হওয়া",
+    get : "পাওয়া, অর্জন করা, আনা",
+    give :"দান করা , প্রদান করা , দিয়ে দেওয়া , অর্পণ করা",
+    go : "চলা , যাওয়া , গমন করা , ছেড়ে যাওয়া , বিদায় হওয়া , এগোনো , তেজ",
+    keep :"রাখা; ধরা; পালন করা; রক্ষা করা; তত্ত্বাবধান করা",
+    let : "কোনো কিছু করতে দেওয়া , ভাড়া বা খাজনায় দেওয়া , ব্যাহত করা",
+    make : "সৃষ্টি করা, গঠন, বা তৈরি করা",
+    put:"রাখা, স্থাপন করা",
+    seem:"বোধ হওয়া; প্রতিভাত হওয়া",
+    take:"গ্রহণ করা; লওয়া; ধরিয়া বা ্র্রধরে ফেলা; নিয়া যাওয়া",
+    put:"রাখা, স্থাপন করা",
+    seem:"বোধ হওয়া; প্রতিভাত হওয়া",
+    take: "গ্রহণ করা; লওয়া; ধরিয়া বা ্র্রধরে ফেলা; নিয়া যাওয়া",
+    be: "হত্তয়া , থাকা , বর্তমান থাকা (, অস্তিমান থাকা , অবস্থাপ্রাপ্ত হত্তয়া , হইয়া ত্তঠা , পরিণত হত্তয়া, বর্তমান হত্তয়া (V), ঘটা , দাম লাগা",
+    do: "করা",
+    have: "অধিকারে পাওয়া,গ্রহণ করা",
+    say: "বলা , কথা বলা , উচ্চারণ করা , কহা ; কওয়া",
+    see: "দেখা, দর্শন করা; উপলব্ধি করা",
+    send: "পাঠানো, প্রেরণ করা",
+    may: "পারা , ইংরেজী বৎসরের পঞ্চম মাস , পুষ্পবিশেষ",
+    will:"সংকল্প; ভবিষ্যৎ বুঝাইতে, ইচ্ছা, অভিপ্রায় ইত্যাদি বুঝাইতে ব্যবহৃত",
+    about:"বিষয়ে , নিকট , প্রায় , ব্যাপৃত , ঘুরিয়া , চতুর্দিকে, ইতস্তত , আশেপাশে , প্রায় কাছাকাছি , আসন্ন ",
+    across:"আড়াআড়ি , চওড়া-চওড়ি , এপার থেকে ওপার",
+    after:"পরে",
+    against:"বিপক্ষে , প্রতিকূলে , বিরুদ্ধে",
+    among:"অনেকের বা বহুর মধ্যে",
+    at:"প্রতি (Prep.), মধ্যে, নিকট",
+    before:"সম্মুখে, আগে, পূর্বে",
+    between:"মধ্যিখানে , মধ্যবর্তী; দুয়ের মধ্যে, পরস্পরের মধ্যে",
+    by:"কাছে; পাশে; নিকটে; ধারে",
+    down:"নীচে; নিম্নে; নিম্নাভিমুখে; নীচের দিকে, (গতি নির্দেশক ক্রিয়াপদের সাথে) উচ্চ অবস্থান থেকে নিম্ন অবস্থানে",
+    from:"থেকে , হতে , হইতে",
+    in:"ভিতরে, মধ্যে",
+    
+}
+
+// word = prompt("Enter Word: ");
+
+// for (i in array1)
+// {
+//     if (word == i)
+//     {
+//         let a = array1[i]
+//         document.getElementById('wordmean').innerHTML = a;
+//     }
+// }
+
+
+
+
+function myFunction()
+{
+    var x = document.getElementById("myText").value;
+    for (i in array1)
+{
+    if (x.toLowerCase() == i)
+    {
+        let c = array1[i]
+        document.getElementById('mean').innerHTML = c;
+
+    }
+}
+    
+}
+    </script>
+
+<script type="text/javascript" src="typed.js"></script>
+<script type="text/javascript">
+      var typed = new Typed('.nice', {
+    strings: ["THIS IS A DICTIONARY"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop:true,
+  });
+</script>
+
+<script>
+  var bleep = new Audio()
+ bleep.src = "this is.mp3";
+</script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,600;0,700;1,600&family=Lobster&family=Peddana&family=Piazzolla:wght@600&family=Sansita+Swashed:wght@800&family=Teko:wght@600&display=swap" rel="stylesheet">
+    <title>Hello, world!</title>
+
+    <style>
+
+      body
+      {
+        background-image: url('img/1586351.jpg');
+      }
+
+      .container
+      {
+        
+        margin-top: 5%;
+        margin-left: 23%;
+      }
+      .ka
+      {
+        
+       
+        margin-left: 15%;
+        margin-right: 52%;
+        padding-bottom: 10px;
+      }
+
+  .calculator {
+    width: 50vw;
+    height: 75vh;
+    background-color: #c0c0c0;
+    box-shadow: 0px 0px 0px 10px #666;
+    border: 5px solid black;
+    border-radius: 10px;
+  }
+  #display {
+    width: 50vw;
+    height: 10vh;
+    text-align: right;
+    background-color: black;
+    border: 3px solid white;
+    font-size: 3rem;
+    left: 2px;
+    top: 2px;
+    color: #7fff00;
+  }
+  .btnTop{
+    color: white;
+    background-color: #6f6f6f;
+    font-size: 3rem;
+    margin: auto;
+    width: 10vw;
+    height: 13vh;
+  }
+  .btnNum {
+    color: white;
+    background-color: black;
+    font-size: 3rem;
+    margin: auto;
+    width: 10vw;
+    height: 13vh;
+  }
+  .btnMath {
+    color: white;
+    background-color: #2A333D;
+    
+    font-size: 3rem;
+    margin: auto;
+    width: 10vw;
+    height: 13vh;
+  }
+  .btnOpps {
+    color: white;
+    background-color: #5B7593;
+    font-size: 3rem;
+    margin: auto;
+    width: 10vw;
+    height: 13vh;
+  }
+
+  @media (max-width: 800px)
+  {
+    * {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+
+.calculator {
+  width: 350px;
+  height: 320px;
+  background-color: #c0c0c0;
+  box-shadow: 0px 0px 0px 10px #666;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+#display {
+  width: 320px;
+  height: 40px;
+  text-align: right;
+  background-color: black;
+  border: 3px solid white;
+  font-size: 18px;
+  left: 2px;
+  top: 2px;
+  color: #7fff00;
+}
+.btnTop{
+  color: white;
+  background-color:#2A333D;
+  font-size: 14px;
+  margin: auto;
+  width: 50px;
+  height: 25px;
+}
+.btnNum {
+  color: white;
+  background-color: black;
+  font-size: 14px;
+  margin: auto;
+  width: 50px;
+  height: 25px;
+}
+.btnMath {
+  color: white;
+  background-color: #92C1F5;
+  font-size: 14px;
+  margin: auto;
+  width: 50px;
+  height: 25px;
+}
+.btnOpps {
+  color: white;
+  background-color: #2A333D;
+  font-size: 14px;
+  margin: auto;
+  width: 50px;
+  height: 25px;
+}
+  }
+
+@media (max-width: 700px)
+{
+  .container
+      {
+        
+        margin-top: 5%;
+        margin-left: 0px;
+      }
+}
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light jio8">
+      
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto ml-auto">
+            <li class="nav-item active">
+              <a class="link" href="index.htm" class="active" style="color: tomato;">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="link1" href="about.htm">Exprience</a>
+            </li>
+            <div class="dropdown" style="margin-top: 20px;">
+              <a href="#" class="dropbtn dropdown-toggle ">About Me   </a>
+              <div class="dropdown-content mt-2" style="width: 200px;">
+                <a href="emad.htm">Emad Ahmed</a>
+                <hr class="bg-dark">
+                
+              </div>
+            </div>
+            
+            <div class="dropdown" style="margin-top: 20px;">
+              <a href="#" class="dropbtn dropdown-toggle ">My Project  </a>
+              <div class="dropdown-content mt-2">
+                <a href="calculator.htm">Calculator</a>
+                <hr class="bg-dark">
+                <a href="tictoe.htm">Tic Toe</a>
+                <hr class="bg-dark">
+                <a href="dictionary.htm">Dictionary</a>
+                <hr class="bg-dark">
+              <a href="scientific.htm">Scientific Calculator</a>
+              </div>
+            </div>
+            
+            <li class="nav-item">
+              <a class="link3" href="versity.htm" >Versity</a>
+            </li>
+            <li class="nav-item">
+                <a class="link3" href="contact.htm" >Contact Me</a>
+              </li>
+              <div class="dropdown" style="margin-top: 20px;">
+                <a href="#" class="dropbtn dropdown-toggle ">Deliverable</a>
+                <div class="dropdown-content mt-2">
+                  
+                  <a href="https://amadahmed1234678.wixsite.com/mysite-7" onmousedown="bleep.play()">Report</a>
+                  <hr class="bg-dark">
+                  <a href="diagram.htm">Diagram</a>
+    
+                </div>
+              </div>
+          </ul>
+          
+        </div>
+      </nav>
+
+
+      <div class="container">
+        <h1 class="mb-5 ka">Scientific Calculator</h1>
+        <form name="sci-calc">
+            <table class="calculator" cellspacing="0" cellpadding="1">
+              <tr>
+                <td colspan="5"><input id="display" name="display" value="0" size="28" maxlength="25"></td>
+              </tr>
+              <tr>
+                <td><input type="button" class="btnTop" name="btnTop" value="C" onclick="this.form.display.value=  0 "></td>
+                <td><input type="button" class="btnTop" name="btnTop" value="<--" onclick="deleteChar(this.form.display)"></td>
+                <td><input type="button" class="btnTop" name="btnTop" value="=" onclick="if(checkNum(this.form.display.value)) { compute(this.form) }"></td>
+                <td><input type="button" class="btnOpps" name="btnOpps" value="&#960;" onclick="addChar(this.form.display,'3.14159265359')"></td>
+                <td><input type="button" class="btnMath" name="btnMath" value="%" onclick=" percent(this.form.display)"></td>
+              </tr>
+              <tr>
+                <td><input type="button" class="btnNum" name="btnNum" value="7" onclick="addChar(this.form.display, '7')"></td>
+                <td><input type="button" class="btnNum" name="btnNum" value="8" onclick="addChar(this.form.display, '8')"></td>
+                <td><input type="button" class="btnNum" name="btnNum" value="9" onclick="addChar(this.form.display, '9')"></td>
+                <td><input type="button" class="btnOpps" name="btnOpps" value="x&#94;" onclick="if(checkNum(this.form.display.value)) { exp(this.form) }"></td>
+                <td><input type="button" class="btnMath" name="btnMath" value="/" onclick="addChar(this.form.display, '/')"></td>
+              <tr>
+                <td><input type="button" class="btnNum" name="btnNum" value="4" onclick="addChar(this.form.display, '4')"></td>
+                <td><input type="button" class="btnNum" name="btnNum" value="5" onclick="addChar(this.form.display, '5')"></td>
+                <td><input type="button" class="btnNum" name="btnNum" value="6" onclick="addChar(this.form.display, '6')"></td>
+                <td><input type="button" class="btnOpps" name="btnOpps" value="ln" onclick="if(checkNum(this.form.display.value)) { ln(this.form) }"></td>
+                <td><input type="button" class="btnMath" name="btnMath" value="*" onclick="addChar(this.form.display, '*')"></td>
+              </tr>
+              <tr>
+                <td><input type="button" class="btnNum" name="btnNum" value="1" onclick="addChar(this.form.display, '1')"></td>
+                <td><input type="button" class="btnNum" name="btnNum" value="2" onclick="addChar(this.form.display, '2')"></td>
+                <td><input type="button" class="btnNum" name="btnNum" value="3" onclick="addChar(this.form.display, '3')"></td>
+                <td><input type="button" class="btnOpps" name="btnOpps" value="&radic;" onclick="if(checkNum(this.form.display.value)) { sqrt(this.form) }"></td>
+                <td><input type="button" class="btnMath" name="btnMath" value="-" onclick="addChar(this.form.display, '-')"></td>
+              </tr>
+              <tr>
+                <td><input type="button" class="btnMath" name="btnMath" value="&#177" onclick="changeSign(this.form.display)"></td>
+                <td><input type="button" class="btnNum" name="btnNum" value="0" onclick="addChar(this.form.display, '0')"></td>
+                <td><input type="button" class="btnMath" name="btnMath" value="&#46;" onclick="addChar(this.form.display, '&#46;')"></td>
+                <td><input type="button" class="btnOpps" name="btnOpps" value="x&#50;" onclick="if(checkNum(this.form.display.value)) { square(this.form) }"></td>
+                <td><input type="button" class="btnMath" name="btnMath" value="+" onclick="addChar(this.form.display, '+')"></td>
+              </tr>
+              <tr>
+                <td><input type="button" class="btnMath" name="btnMath" value="(" onclick="addChar(this.form.display, '(')"></td>
+                <td><input type="button" class="btnMath" name="btnMath" value=")" onclick="addChar(this.form.display,')')"></td>
+                <td><input type="button" class="btnMath" name="btnMath" value="cos" onclick="if(checkNum(this.form.display.value)) { cos(this.form) }"></td>
+                <td><input type="button" class="btnMath" name="btnMath" value="sin" onclick="if(checkNum(this.form.display.value)) { sin(this.form) }"></td>
+                <td><input type="button" class="btnMath" name="btnMath" value="tan" onclick="if(checkNum(this.form.display.value)) { tan(this.form) }"></td>
+             </tr>
+            </tabel>
+           </form>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script>
+        function addChar(input, character) {
+	if(input.value == null || input.value == "0")
+		input.value = character
+	else
+		input.value += character
+            }
+
+    function cos(form) {
+        form.display.value = Math.cos(form.display.value);
+                }
+
+    function sin(form) {
+        form.display.value = Math.sin(form.display.value);
+    }
+
+    function tan(form) {
+        form.display.value = Math.tan(form.display.value);
+    }
+
+    function sqrt(form) {
+        form.display.value = Math.sqrt(form.display.value);
+    }
+
+    function ln(form) {
+        form.display.value = Math.log(form.display.value);
+    }
+
+    function exp(form) {
+        form.display.value = Math.exp(form.display.value);
+    }
+
+    function deleteChar(input) {
+        input.value = input.value.substring(0, input.value.length - 1)
+    }
+    var val = 0.0;
+    function percent(input) {
+    val = input.value;
+    input.value = input.value + "%";
+    }
+
+    function changeSign(input) {
+        if(input.value.substring(0, 1) == "-")
+            input.value = input.value.substring(1, input.value.length)
+        else
+            input.value = "-" + input.value
+    }
+
+    function compute(form) {
+    //if (val !== 0.0) {
+    // var percent = form.display.value;  
+    // percent = pcent.substring(percent.indexOf("%")+1);
+    // form.display.value = parseFloat(percent)/100 * val;
+        //val = 0.0;
+    // } else 
+        form.display.value = eval(form.display.value);
+    }
+
+
+    function square(form) {
+        form.display.value = eval(form.display.value) * eval(form.display.value)
+    }
+
+    function checkNum(str) {
+        for (var i = 0; i < str.length; i++) {
+            var ch = str.charAt(i);
+            if (ch < "0" || ch > "9") {
+                if (ch != "/" && ch != "*" && ch != "+" && ch != "-" && ch != "."
+                    && ch != "(" && ch!= ")" && ch != "%") {
+                    alert("invalid entry!")
+                    return false
+                    }
+                }
+            }
+            return true
+    }
+    </script>
+
+<script>
+  var bleep = new Audio()
+ bleep.src = "this is.mp3";
+</script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

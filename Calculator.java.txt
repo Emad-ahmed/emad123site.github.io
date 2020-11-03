@@ -1,0 +1,561 @@
+// Main Class
+import java.util.Scanner;
+public class Main 
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Assalamualikum\n");
+		System.out.println("There are some feature we have,please select whice one you need");
+		System.out.println(" 1. Summation(+)");
+		System.out.println(" 2. Substraction(-)");
+		System.out.println(" 3. Multiplication(x)");
+		System.out.println(" 4. Division(/)");
+		System.out.println(" 5. Mod(%)");
+		System.out.println(" 6. Factorial(x!)");
+		System.out.println(" 7. Square(x2)");
+		System.out.println(" 8. Cube(x3)");
+		System.out.println(" 9. X to the power Y(xY)");
+		System.out.println("10. Square root");
+		System.out.println("11. Logarithm(log)");
+		System.out.println("12. Percentage(%)");
+		System.out.println("13. Dec to Bin");
+		System.out.println("14. Dec to Oct");
+		System.out.println("15. Dec to Hexa");
+		System.out.println("16. Bin to Dec");
+		System.out.println("17. Bin to Oct");
+		System.out.println("18. Bin to Hexa");
+		System.out.println("19. Oct to Dec");
+		System.out.println("20. Oct to Bin");
+		System.out.println("21. Oct to Hexa");
+		System.out.println("22. Hexa to Dec");
+		System.out.println("23. Hexa to Bin");
+		System.out.println("24. Hexa to Oct");
+		System.out.println("25. Bitwise OR");
+		System.out.println("26. Bitwise AND");
+		System.out.println("27. Bitwise X-OR");
+		System.out.println("28. Sin()");
+		System.out.println("29. Cos()");
+		System.out.println("30. Tan()");
+		System.out.println(" 0. Exit");
+		
+		
+		Scanner input=new Scanner(System.in);
+		boolean ok=true;
+		long n;
+		while(ok) 
+		{
+			n=input.nextInt();
+			if(n==0)
+				break;
+			
+			if(n<=5)
+				arithmeticCalculation(n);
+			else if(n<=12)
+				others(n);
+			else if(n<=24)
+				numberTransformation(n);
+			else if(n<=27)
+				bitwiseOperation(n);
+			else if(n<=30)
+				trigonometricFuntion(n);
+		}
+	}
+	
+	public static void arithmeticCalculation(long n)
+	{
+		ArithmeticCalculation obj = new ArithmeticCalculation();
+		if(n==1) // summation
+			obj.summation();
+		if(n==2) // substraction
+			obj.substraction();
+		if(n==3) // multiplication
+			obj.multiplication();
+		if(n==4) // division
+			obj.division();
+		if(n==5) // mod
+			obj.mod();
+	}
+	
+	public static void others(long n)
+	{
+		Others obj = new Others();
+		if(n==6) // factorial
+			obj.factorial();
+		if(n==7) // square
+			obj.square();
+		if(n==8) // cube
+			obj.cube();
+		if(n==9) // X to the power y
+			obj.xToThePower();
+		if(n==10) // square root
+			obj.squareRoot();
+		if(n==11) // logarithm
+			obj.logarithm();
+		if(n==12) // percentage
+			obj.percentage();
+	}
+	
+	public static void numberTransformation(long n)
+	{
+		NumberTransformation obj = new NumberTransformation();
+		
+		if(n==13) // Dec to Bin
+			obj.DecToBin();
+		if(n==14) // Dec to Oct
+			obj.DecToOct();
+		if(n==15) // Dec to Hexa
+			obj.DecToHexa();
+		
+		if(n==16) // Bin to Dec
+			obj.BinToDec();
+		if(n==17) // Bin to Oct
+			obj.BinToOct();
+		if(n==18) // Bin to Hexa
+			obj.BinToHexa();
+		
+		if(n==19) // Oct to Dec
+			obj.OctToDec();
+		if(n==20) // Oct to Bin
+			obj.OctToBin();
+		if(n==21) // Oct to Hexa
+			obj.OctToHexa();
+		
+		if(n==22) // Hexa to Dec
+			obj.HexaToDec();
+		if(n==23) // Hexa to Bin
+			obj.HexaToBin();
+		if(n==24) // Hexa to Oct
+			obj.HexaToOct();
+	}
+	
+	public static void bitwiseOperation(long n)
+	{
+		BitwiseOperation obj = new BitwiseOperation(n);
+	}
+	
+	public static void trigonometricFuntion(long n)
+	{
+		TrigonometricFuntion obj = new TrigonometricFuntion();
+		if(n==28) // sin()
+			obj.sin();
+		if(n==29) // cos()
+			obj.cos();
+		if(n==30) // tan()
+			obj.tan();
+	}
+	
+}
+
+// Arithmetic Calculation
+
+import java.util.Scanner;
+public class ArithmeticCalculation {
+	
+	long n;
+	Scanner sc=new Scanner(System.in);
+	
+	public void summation()
+	{
+		long sum=0;
+		boolean ok=true;
+		while(ok)
+		{
+			long x=sc.nextLong();
+			sum+=x;
+			String c=sc.next();
+			if(c.charAt(0) == '=')
+			{
+				System.out.println(sum);
+				break;
+			}
+		}
+	}
+	
+	public void substraction()
+	{
+		long a=0,b=0;
+		boolean ok=true;
+		int i=0;
+		while(ok)
+		{
+			if(i==0)
+			{
+				long z=sc.nextLong();
+				a+=z;
+				i++;
+				continue;
+			}
+			
+			String c=sc.next();
+			if(c.charAt(0) == '=')
+			{
+				System.out.println(a-b);
+				break;
+			}
+			
+			long x=sc.nextLong();
+			if(c.charAt(0) == '+')
+				a+=x;
+			else
+				b+=x;
+		}
+	}
+	
+	public void multiplication()
+	{
+		long a=1;
+		boolean ok=true;
+		while(ok)
+		{
+			long x=sc.nextLong();
+			a*=x;
+			String c=sc.next();
+			if(c.charAt(0) == '=')
+			{
+				System.out.println(a);
+				break;
+			}
+		}
+	}
+	
+	public void division()
+	{
+		double a=sc.nextDouble();
+		double b=sc.nextDouble();
+		
+		if(b==0)
+			System.out.println("Cannot divided by zero");
+		else
+			System.out.println(a/b);
+	}
+	
+	public void mod()
+	{
+		long a=sc.nextLong();
+		long b=sc.nextLong();
+		if(b==0)
+			System.out.println("Cannot divided by zero");
+		else
+			System.out.println(a%b);
+	}
+}
+
+// Others
+
+import java.util.Scanner;
+import java.lang.Math;
+public class Others {
+	
+	long n;
+	Scanner sc=new Scanner(System.in);
+	
+	public void factorial()
+	{
+		long x = sc.nextLong();
+		long fact=1;
+		for(int i=1; i<=x; i++)
+			fact*=i;
+		System.out.println(fact);
+	}
+	
+	public void square()
+	{
+		long x = sc.nextLong();
+		System.out.println(x*x);
+	}
+	
+	public void cube()
+	{
+		long x = sc.nextLong();
+		System.out.println(x*x*x);
+	}
+	
+	public void xToThePower()
+	{
+		long x = sc.nextLong();
+		long y = sc.nextLong();
+		long val=1;
+		for(int i=1; i<=y; i++)
+			val*=x;
+		System.out.println(val);
+	}
+	
+	public void squareRoot()
+	{
+		long x = sc.nextLong();
+		System.out.println(Math.sqrt(x));
+	}
+	
+	public void logarithm()
+	{
+		long x = sc.nextLong();
+		System.out.println(Math.log10(x));
+	}
+	
+	public void percentage()
+	{
+		long x = sc.nextLong();
+		long y = sc.nextLong();
+		long val = (x*y)/100;
+		System.out.println(val);
+	}
+	
+}
+
+// Number Transformation
+
+import java.util.Scanner;
+import java.lang.Math;
+public class NumberTransformation {
+	
+	long n;
+	Scanner sc=new Scanner(System.in);
+	
+	/*       Decimal to      */
+	public void DecToBin() // Dec to bin
+	{
+		long dec = sc.nextLong();
+		String bin = Long.toBinaryString(dec);
+		System.out.println(bin);
+	}
+	
+	public void DecToOct() // Dec to Oct
+	{
+		long dec = sc.nextLong();
+		String oct = Long.toOctalString(dec);
+		System.out.println(oct);
+	}
+	
+	public void DecToHexa() // Dec to Hexa
+	{
+		long dec = sc.nextLong();
+		String hexa = Long.toHexString(dec);
+		System.out.println(hexa);
+	}
+	
+	/*        Binary to      */
+	
+	public void BinToDec() // Bin to Dec
+	{
+		String bin=sc.next();
+		long dec = Long.parseLong(bin,2);
+		System.out.println(dec);
+	}
+	
+	public void BinToOct() // Bin to Oct
+	{
+		String bin=sc.next();
+		long dec = Long.parseLong(bin,2);
+		String oct = Long.toOctalString(dec);
+		System.out.println(oct);
+	}
+	
+	public void BinToHexa() // Bin to Hexa
+	{
+		String bin=sc.next();
+		long dec = Long.parseLong(bin,2);
+		String hexa = Long.toHexString(dec);
+		System.out.println(hexa);
+	}
+	
+	/*        Octal to        */
+	
+	public void OctToDec() // Oct to Dec
+	{
+		String oct = sc.next();
+		long dec = Long.parseLong(oct,8);
+		System.out.println(dec);
+	}
+	
+	public void OctToBin() // Oct to Bin
+	{
+		String oct = sc.next();
+		long dec = Long.parseLong(oct,8);
+		String bin = Long.toBinaryString(dec);
+		System.out.println(bin);
+	}
+	
+	public void OctToHexa() // Oct to Hexa
+	{
+		String oct = sc.next();
+		long dec = Long.parseLong(oct,8);
+		String hexa = Long.toHexString(dec);
+		System.out.println(hexa);
+	}
+	
+	/*        Hexadecimal to        */
+	
+	public void HexaToDec() // Hexa to Dec
+	{
+		String hexa = sc.next();
+		long dec = Long.parseLong(hexa,16);
+		System.out.println(dec);
+	}
+	
+	public void HexaToBin() // Hexa to Bin
+	{
+		String hexa = sc.next();
+		long dec = Long.parseLong(hexa,16);
+		String bin = Long.toBinaryString(dec);
+		System.out.println(bin);
+	}
+	
+	public void HexaToOct() // Hexa to Oct
+	{
+		String hexa = sc.next();
+		long dec = Long.parseLong(hexa,16);
+		String oct = Long.toOctalString(dec);
+		System.out.println(oct);
+	}
+
+}
+
+// Bitwise Operation
+
+import java.util.Scanner;
+public class BitwiseOperation {
+
+		long n;
+		BitwiseOperation(long n)
+		{
+			Scanner sc=new Scanner(System.in);
+			System.out.println("Please select which type of input you want: ");
+			System.out.println("1. Decimal");
+			System.out.println("2. Baniry");
+			System.out.println("3. Octal");
+			System.out.println("4. Hexadecimal");
+			int type =sc.nextInt();
+			
+			if(type==1) // Decimal
+			{
+				long dec1=sc.nextLong();
+				long dec2=sc.nextLong();
+				if(n==25)// OR operation
+				{
+					long val = OR(dec1,dec2);
+					System.out.println(val);
+				}
+				if(n==26) // AND operation
+				{
+					long val = AND(dec1,dec2);
+					System.out.println(val);
+				}
+				if(n==27) // X-OR operation
+				{
+					long val = X_OR(dec1,dec2);
+					System.out.println(val);
+				}
+			}
+			if(type == 2) // Binary
+			{
+				String bin1=sc.next();
+				String bin2=sc.next();
+				
+				long dec1 = Long.parseLong(bin1,2);
+				long dec2 = Long.parseLong(bin2,2);
+				
+				long dec=0;
+				if(n==25) // OR operation
+					dec=OR(dec1,dec2);
+				if(n==26) // AND operation
+					dec=AND(dec1,dec2);
+				if(n==27) // X-OR operation
+					dec=X_OR(dec1,dec2);
+				
+				String bin = Long.toBinaryString(dec);
+				System.out.println(bin);
+			}
+			
+			if(type == 3) // Octal
+			{
+				String oct1=sc.next();
+				String oct2=sc.next();
+				
+				long dec1 = Long.parseLong(oct1,8);
+				long dec2 = Long.parseLong(oct2,8);
+				
+				long dec=0;
+				if(n==25) // OR operation
+					dec=OR(dec1,dec2);
+				if(n==26) // AND operation
+					dec=AND(dec1,dec2);
+				if(n==27) // X-OR operation
+					dec=X_OR(dec1,dec2);
+				
+				String oct = Long.toOctalString(dec);
+				System.out.println(oct);
+			}
+			
+			if(type == 4) // Hexadecimal
+			{
+				String hexa1=sc.next();
+				String hexa2=sc.next();
+				
+				long dec1 = Long.parseLong(hexa1,16);
+				long dec2 = Long.parseLong(hexa2,16);
+				
+				long dec=0;
+				if(n==25) // OR operation
+					dec=OR(dec1,dec2);
+				if(n==26) // AND operation
+					dec=AND(dec1,dec2);
+				if(n==27) // X-OR operation
+					dec=X_OR(dec1,dec2);
+				
+				String Hexa = Long.toHexString(dec);
+				System.out.println(Hexa);
+			}
+		}
+		
+		public long OR(long dec1, long dec2)
+		{
+			long ans=(dec1|dec2);
+			return ans;
+		}
+		
+		public long AND(long dec1, long dec2)
+		{
+			long ans=(dec1&dec2);
+			return ans;
+		}
+		
+		public long X_OR(long dec1, long dec2)
+		{
+			long ans=(dec1^dec2);
+			return ans;
+		}
+}
+
+// Trigonometric Function
+
+import java.lang.Math.*;
+import java.util.Scanner;
+public class TrigonometricFuntion {
+	
+	long n;
+	Scanner sc=new Scanner(System.in);
+	
+	public void sin()
+	{
+		double a = sc.nextDouble();
+		double b = (a*Math.PI)/180;
+		System.out.println(Math.sin(b));
+	}
+	
+	public void tan()
+	{
+		double a = sc.nextDouble();
+		double b = (a*Math.PI)/180;
+		if(a==90)
+			System.out.println("Not Defined");
+		else
+			System.out.println(Math.tan(b));
+	}
+	
+	public void cos()
+	{
+		double a = sc.nextDouble();
+		double b = (a*Math.PI)/180;
+		System.out.println(Math.cos(b));
+	}
+}
