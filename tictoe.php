@@ -1,7 +1,4 @@
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>TIC TOE</title>
+
   
 <link rel='stylesheet prefetch' href='https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css'>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -115,66 +112,8 @@
 }
 
   </style>
-</head>
- 
-<body>
 
-  <nav class="navbar navbar-expand-lg navbar-light jio8">
-      
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto ml-auto">
-        <li class="nav-item active">
-          <a class="link" href="index.htm" class="active" style="color: tomato;">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="link1" href="about.htm">Exprience </a>
-        </li>
-        <div class="dropdown" style="margin-top: 20px;">
-          <a href="#" class="dropbtn dropdown-toggle ">About Me </a>
-          <div class="dropdown-content mt-2" style="width: 200px;">
-            <a href="emad.htm">Emad Ahmed</a>
-            <hr class="bg-dark">
-          </div>
-        </div>
-        
-        <div class="dropdown" style="margin-top: 20px;">
-          <a href="#" class="dropbtn dropdown-toggle ">My Project </a>
-          <div class="dropdown-content mt-2">
-            <a href="calculator.htm">Calculator</a>
-            <hr class="bg-dark">
-            <a href="tictoe.htm">Tic Toe</a>
-            <hr class="bg-dark">
-            <a href="dictionary.htm">Dictionary</a>
-            <hr class="bg-dark">
-          <a href="scientific.htm">Scientific Calculator</a>
-          </div>
-        </div>
-        
-        <li class="nav-item">
-          <a class="link3" href="versity.htm" >Versity</a>
-        </li>
-        <li class="nav-item">
-            <a class="link3" href="contact.htm" >Contact Me</a>
-          </li>
-          
-          <div class="dropdown" style="margin-top: 20px;">
-            <a href="#" class="dropbtn dropdown-toggle ">Deliverable</a>
-            <div class="dropdown-content mt-2">
-              
-              <a href="https://amadahmed1234678.wixsite.com/mysite-7" onmousedown="bleep.play()">Report</a>
-              <hr class="bg-dark">
-              <a href="diagram.htm">Diagram</a>
 
-            </div>
-          </div>
-      </ul>
-      
-    </div>
-  </nav>
   
   <div class="jumbotron">
 
@@ -567,9 +506,3 @@ function emptyCells(){
       });
 </script>
 
-<script>
-  var bleep = new Audio()
- bleep.src = "this is.mp3";
-</script>
-</body>
-</html>
